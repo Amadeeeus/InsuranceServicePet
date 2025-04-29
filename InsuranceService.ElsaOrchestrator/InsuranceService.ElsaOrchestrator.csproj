@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="11.11.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
@@ -20,12 +21,21 @@
 
     <ItemGroup>
       <Folder Include="integration-tests\" />
-      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\" />
-      <Folder Include="src\InsuranceService.ElsaOrchestrator.App\" />
-      <Folder Include="src\InsuranceService.ElsaOrchestrator.Core\" />
-      <Folder Include="src\InsuranceService.ElsaOrchestrator.Data\" />
-      <Folder Include="src\InsuranceService.ElsaOrchestrator.Di\" />
-      <Folder Include="src\InsuranceService.ElsaOrchestrator.Infrasructure\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Data\Contexts\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Data\EntityConfigurations\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Data\Migrations\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Dtos\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Entities\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Enums\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Exceptions\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Extensions\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Features\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\IntegrationEvents\Pub\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\IntegrationEvents\Sub\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Middlewares\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Services\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Shared\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Utils\" />
       <Folder Include="tests\" />
     </ItemGroup>
 

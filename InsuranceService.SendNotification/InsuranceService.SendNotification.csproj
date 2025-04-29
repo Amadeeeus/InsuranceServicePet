@@ -19,12 +19,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="src\InsuranceService.SendNotification.Api\" />
-      <Folder Include="src\InsuranceService.SendNotification.App\" />
-      <Folder Include="src\InsuranceService.SendNotification.Core\" />
-      <Folder Include="src\InsuranceService.SendNotification.Data\" />
-      <Folder Include="src\InsuranceService.SendNotification.Di\" />
-      <Folder Include="src\InsuranceService.SendNotification.Infrastructure\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Data\Contexts\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Data\EntityConfigurations\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Data\Migrations\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Dtos\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Entities\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Enums\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Exceptions\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Extensions\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Features\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\IntegrationEvents\Pub\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\IntegrationEvents\Sub\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Middlewares\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Services\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Shared\" />
+      <Folder Include="src\InsuranceService.SendNotification.Api\Utils\" />
       <Folder Include="tests\" />
     </ItemGroup>
 

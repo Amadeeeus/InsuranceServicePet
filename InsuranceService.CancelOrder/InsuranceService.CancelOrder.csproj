@@ -19,12 +19,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="src\InsuranceService.CancelOrder.Api\" />
-      <Folder Include="src\InsuranceService.CancelOrder.App\" />
-      <Folder Include="src\InsuranceService.CancelOrder.Core\" />
-      <Folder Include="src\InsuranceService.CancelOrder.Data\" />
-      <Folder Include="src\InsuranceService.CancelOrder.Di\" />
-      <Folder Include="src\InsuranceService.CancelOrder.Infrastructure\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Data\Contexts\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Data\EntityConfigurations\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Data\Migrations\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Dtos\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Entities\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Enums\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Exceptions\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Extensions\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Features\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\IntegrationEvents\Pub\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\IntegrationEvents\Sub\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Middlewares\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Services\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Shared\" />
+      <Folder Include="src\InsuranceService.CancelOrder.Api\Utils\" />
       <Folder Include="tests\" />
     </ItemGroup>
 

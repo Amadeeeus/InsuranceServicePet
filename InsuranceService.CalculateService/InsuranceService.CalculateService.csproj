@@ -19,12 +19,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="src\InsuranceService.CalculateService.Api\" />
-      <Folder Include="src\InsuranceService.CalculateService.App\" />
-      <Folder Include="src\InsuranceService.CalculateService.Core\" />
-      <Folder Include="src\InsuranceService.CalculateService.Data\" />
-      <Folder Include="src\InsuranceService.CalculateService.Di\" />
-      <Folder Include="src\InsuranceService.CalculateService.Infrastructure\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Data\Contexts\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Data\EntityConfigurations\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Data\Migrations\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Dtos\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Entities\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Enums\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Exceptions\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Extensions\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Features\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\IntegrationEvents\Pub\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\IntegrationEvents\Sub\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Middlewares\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Services\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Shared\" />
+      <Folder Include="src\InsuranceService.CalculateService.Api\Utils\" />
       <Folder Include="tests\" />
     </ItemGroup>
 

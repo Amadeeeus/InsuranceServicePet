@@ -19,12 +19,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="src\InsuranceService.RegisterUser.Api\" />
-      <Folder Include="src\InsuranceService.RegisterUser.App\" />
-      <Folder Include="src\InsuranceService.RegisterUser.Core\" />
-      <Folder Include="src\InsuranceService.RegisterUser.Data\" />
-      <Folder Include="src\InsuranceService.RegisterUser.Di\" />
-      <Folder Include="src\InsuranceService.RegisterUser.Infrastructure\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Data\Contexts\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Data\EntityConfigurations\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Data\Migrations\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Dtos\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Entities\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Enums\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Exceptions\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Extensions\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Features\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\IntegrationEvents\Pub\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\IntegrationEvents\Sub\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Middlewares\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Services\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Shared\" />
+      <Folder Include="src\InsuranceService.RegisterUser.Api\Utils\" />
       <Folder Include="tests\" />
     </ItemGroup>
 

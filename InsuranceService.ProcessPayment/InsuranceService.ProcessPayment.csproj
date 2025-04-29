@@ -19,12 +19,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="src\InsuranceService.ProcessPayment.Api\" />
-      <Folder Include="src\InsuranceService.ProcessPayment.App\" />
-      <Folder Include="src\InsuranceService.ProcessPayment.Core\" />
-      <Folder Include="src\InsuranceService.ProcessPayment.Data\" />
-      <Folder Include="src\InsuranceService.ProcessPayment.Di\" />
-      <Folder Include="src\InsuranceService.ProcessPayment.Infrastructure\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Data\Contexts\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Data\EntityConfigurations\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Data\Migrations\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Dtos\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Entities\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Enums\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Exceptions\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Extensions\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Features\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\IntegrationEvents\Pub\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\IntegrationEvents\Sub\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Middlewares\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Services\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Shared\" />
+      <Folder Include="src\InsuranceService.ProcessPayment.Api\Utils\" />
       <Folder Include="tests\" />
     </ItemGroup>
 
