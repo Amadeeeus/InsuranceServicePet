@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="src\InsuranceService.GenerateDocument.Api\" />
+      <Folder Include="src\InsuranceService.GenerateDocument.App\" />
+      <Folder Include="src\InsuranceService.GenerateDocument.Core\" />
+      <Folder Include="src\InsuranceService.GenerateDocument.Data\" />
+      <Folder Include="src\InsuranceService.GenerateDocument.Di\" />
+      <Folder Include="src\InsuranceService.GenerateDocument.Infrastructure\" />
+      <Folder Include="tests\" />
+    </ItemGroup>
+
+</Project>
