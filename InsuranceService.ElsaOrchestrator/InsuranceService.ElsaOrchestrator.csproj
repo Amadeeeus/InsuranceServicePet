@@ -8,9 +8,22 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Elsa" Version="3.3.5" />
+        <PackageReference Include="Elsa.Activities.Http" Version="2.15.1" />
+        <PackageReference Include="Elsa.Activities.Workflows" Version="1.5.5.1943" />
+        <PackageReference Include="Elsa.EntityFrameworkCore" Version="3.3.5" />
+        <PackageReference Include="Elsa.EntityFrameworkCore.PostgreSql" Version="3.3.5" />
+        <PackageReference Include="Elsa.Workflows.Core" Version="3.3.5" />
+        <PackageReference Include="Elsa.Workflows.Management" Version="3.3.5" />
+        <PackageReference Include="Elsa.Workflows.Runtime" Version="3.3.5" />
+        <PackageReference Include="FastEndpoints" Version="6.0.0" />
+        <PackageReference Include="FastEndpoints.Swagger" Version="6.0.0" />
         <PackageReference Include="FluentValidation" Version="11.11.0" />
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8"/>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.15" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="NLog" Version="5.4.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -21,6 +34,7 @@
 
     <ItemGroup>
       <Folder Include="integration-tests\" />
+      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Constats\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Data\Contexts\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Data\EntityConfigurations\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Data\Migrations\" />
@@ -29,7 +43,6 @@
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Enums\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Exceptions\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Extensions\" />
-      <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Features\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\IntegrationEvents\Pub\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\IntegrationEvents\Sub\" />
       <Folder Include="src\InsuranceService.ElsaOrchestrator.Api\Middlewares\" />

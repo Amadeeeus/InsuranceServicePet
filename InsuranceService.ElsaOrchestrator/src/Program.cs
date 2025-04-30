@@ -1,44 +1,46 @@
+using FastEndpoints;
+using Elsa.Extensions;
+using Elsa.Workflows;
+using Elsa.Activities.Http;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.CancelOrder;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.CreateOrder;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.CreateProduct;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.GenerateDocument;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.GetClaim;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.GetOrder;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.GetProduct;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.GetUser;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.Orchestration;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.ProcessPayment;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.RegisterUser;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Features.SubmitClaim;
+using InsuranceService.ElsaOrchestrator.InsuranceService.ElsaOrchestrator.Api.Mappings;
+
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
+var services = new ServiceCollection();
+services.AddElsa(elsa => elsa
+    .AddWorkflow<CalculateServiceWorkflow>()
+    .AddWorkflow<CancelOrderWorkflow>()
+    .AddWorkflow<CreateOrderWorkflow>()
+    .AddWorkflow<CreateProductWorkflow>()
+    .AddWorkflow<GenerateDocumentWorkflow>()
+    .AddWorkflow<GetClaimWorkflow>()
+    .AddWorkflow<GetOrderWorkflow>()
+    .AddWorkflow<GetProductWorkflow>()
+    .AddWorkflow<GetUserWorkflow>()
+    .AddWorkflow<ProcessPaymentWorkflow>()
+    .AddWorkflow<RegisterUserWorkflow>()
+    .AddWorkflow<SubmitClaimWorkflow>().AddActivity<SendHttpRequest>());
 builder.Services.AddSwaggerGen();
-
+builder.Services.Configure<WorkflowMappings>(
+    builder.Configuration.GetSection("WorkflowMappings"));
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+builder.Services.AddFastEndpoints();
 app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
-
+app.UseFastEndpoints();
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
